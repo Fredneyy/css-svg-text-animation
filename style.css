@@ -1,0 +1,38 @@
+body {
+    background-color: lightsalmon;
+    animation: bg-color 5s ease;
+}
+
+
+.hey-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    stroke-dasharray: 600px;
+    animation: hey 5s ease;
+}
+
+@keyframes hey {
+    0% {
+        stroke-dashoffset: 100px;
+        stroke-dasharray: 100px;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+        stroke-dasharray: 600px;
+    }
+
+}
+
+@keyframes  bg-color {
+    0% {
+        background-color: #36376a;
+    }
+
+    100% {
+        background-color: lightsalmon;
+    }
+
+}
